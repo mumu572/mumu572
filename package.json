@@ -1,0 +1,40 @@
+{
+  "name": "hexo-blog",
+  "version": "1.0.0",
+  "private": true,
+  "hexo": {
+    "version": "4.2.1"
+  },
+  "scripts": {
+    "clean": "hexo clean",
+    "build": "hexo generate",
+    "clean:yuque": "yuque-hexo clean",
+    "deploy": "npm run build && hexo deploy",
+    "dev": "hexo s",
+    "sync": "YUQUE_TOKEN=sNVkgu5uoA5dXPSbxW9uf91vahBMCYeUU9qD6MRo yuque-hexo sync",
+    "reset": "npm run clean:yuque && npm run clean && npm run sync",
+    "theme": "git submodule add --force https://github.com/all-resonance/hexo-theme-volantis.git themes/hexo-theme-volantis"
+  },
+  "dependencies": {
+    "hexo": "^4.2",
+    "hexo-deployer-git": "^2.1.0",
+    "hexo-generator-archive": "^1.0.0",
+    "hexo-generator-category": "^1.0.0",
+    "hexo-generator-index": "^1.0.0",
+    "hexo-generator-json-content": "^4.2.3",
+    "hexo-generator-search": "^2.4.1",
+    "hexo-generator-tag": "^1.0.0",
+    "hexo-renderer-ejs": "^1.0.0",
+    "hexo-renderer-marked": "^2.0.0",
+    "hexo-renderer-stylus": "^1.1.0",
+    "hexo-server": "^1.0.0"
+  },
+  "yuqueConfig": {
+    "baseUrl": "https://www.yuque.com/api/v2",
+    "login": "resonance",
+    "repo": "cqu234"
+  },
+  "devDependencies": {
+    "yuque-hexo": "^1.6.0"
+  }
+}
