@@ -1,6 +1,6 @@
 ### Hi there，I'm shilin 👋
 
-一名前端开发者。
+首先是一个工程师，然后才是一个前端开发者。
 
 **Languages:**  
 
@@ -76,7 +76,10 @@
 
 
 ### Mastering skills
-等待添加...
+
+- Javascript: ES5/ES6/ES7, Scopes, closures, prototype chains
+- React: Hooks, virtualDOM, Diff, Fibel, Redux
+- Webpack: Encapsulation Cli Tool, Project optimisation
 
 ### Daily writing and development tools
 
