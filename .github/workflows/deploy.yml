@@ -24,6 +24,9 @@ jobs:
         with:
           BRANCH: gh-pages
           FOLDER: public
+      - name: Rename Folder Name 🔧
+        run: |
+          mv ./public/ ./resonance.fun/
       - name: SSH Server Deploy 🚀
         uses: kostya-ten/ssh-server-deploy@v4
         with:
@@ -33,5 +36,4 @@ jobs:
           password: ${{ secrets.SSH_PASSWORD }}
           scp_source: ./resonance.fun/
           scp_target: /www/wwwroot/
-          before_script: |
-            mv ./public/ ./resonance.fun/
+            
