@@ -3,7 +3,7 @@ name: Publish page
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   build-and-deploy:
@@ -11,16 +11,24 @@ jobs:
     environment: docs-pages
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
+        uses: actions/checkout@v2
         with:
           persist-credentials: false
-      - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
+      - name: Install Dependencies And Build 🔧
         run: |
           npm install
           npm run build:storybook
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@releases/v3
+      - name: Deploy Github Pages 🚀
+        uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: docs
-          FOLDER: storybook-static
+          BRANCH: gh-pages
+          FOLDER: public
+      - name: FTP Deploy 🚀
+        uses: SamKirkland/FTP-Deploy-Action@4.1.0
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_ROOT }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: /public
+          server-dir: /public_html/www/resonance.fun
