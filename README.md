@@ -54,10 +54,10 @@
       <td><img alt="Forks" src="https://img.shields.io/github/forks/all-resonance/handwriting?style=flat-square&labelColor=373f51&color=e07a5f" /></td>
     </tr>
     <tr>
-      <td><a href="https://github.com/all-resonance/all-resonance.github.io">Blog</a></td>
+      <td><a href="https://github.com/all-resonance/all-resonance">All Resonance</a></td>
       <td>写博客的地方</td>
-      <td><img alt="Stars" src="https://img.shields.io/github/stars/all-resonance/all-resonance.github.io?style=flat-square&labelColor=373f51&color=e07a5f" /></td>
-      <td><img alt="Forks" src="https://img.shields.io/github/forks/all-resonance/all-resonance.github.io?style=flat-square&labelColor=373f51&color=e07a5f" /></td>
+      <td><img alt="Stars" src="https://img.shields.io/github/stars/all-resonance/all-resonance?style=flat-square&labelColor=373f51&color=e07a5f" /></td>
+      <td><img alt="Forks" src="https://img.shields.io/github/forks/all-resonance/all-resonance?style=flat-square&labelColor=373f51&color=e07a5f" /></td>
     </tr>
     <tr>
       <td><a href="https://github.com/resonance-cli/r-pages">R Pages</a></td>
