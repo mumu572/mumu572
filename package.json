@@ -1,41 +1,57 @@
 {
-  "name": "hexo-blog",
+  "name": "all-resonance",
   "version": "1.0.0",
   "private": true,
   "hexo": {
-    "version": "4.2.1"
+    "version": "5.4.0"
   },
   "scripts": {
-    "clean": "hexo clean",
-    "build": "hexo generate",
-    "clean:yuque": "yuque-hexo clean",
-    "deploy": "npm run build && hexo deploy",
+    "build": "hexo clean && hexo g && gulp",
     "dev": "hexo s",
-    "sync": "YUQUE_TOKEN=sNVkgu5uoA5dXPSbxW9uf91vahBMCYeUU9qD6MRo yuque-hexo sync",
-    "reset": "npm run clean:yuque && npm run clean && npm run sync",
-    "theme": "git submodule add --force https://github.com/all-resonance/hexo-theme-volantis.git themes/hexo-theme-volantis",
-    "theme-dev": "git submodule add -b dev --force https://github.com/all-resonance/hexo-theme-volantis.git themes/hexo-theme-volantis"
+    "clean:yuque": "yuque-hexo clean",
+    "clean:all": "yuque-hexo clean && hexo clean",
+    "deploy": "npm run build && hexo deploy",
+    "sync": "sh sync.sh",
+    "theme": "git submodule add --force https://github.com/all-resonance/hexo-theme-volantis.git themes/volantis",
+    "theme-dev": "git submodule add -b dev --force https://github.com/all-resonance/hexo-theme-volantis.git themes/volantis"
   },
   "dependencies": {
-    "hexo": "^4.2",
-    "hexo-deployer-git": "^2.1.0",
+    "hexo": "^5.4.0",
+    "hexo-autonofollow": "^1.0.1",
+    "hexo-autoprefixer": "^2.0.0",
+    "hexo-deployer-git": "^3.0.0",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-category": "^1.0.0",
-    "hexo-generator-index": "^1.0.0",
+    "hexo-generator-feed": "^3.0.0",
+    "hexo-generator-index": "^2.0.0",
     "hexo-generator-json-content": "^4.2.3",
     "hexo-generator-search": "^2.4.1",
+    "hexo-generator-seo-friendly-sitemap": "^0.2.1",
     "hexo-generator-tag": "^1.0.0",
     "hexo-renderer-ejs": "^1.0.0",
-    "hexo-renderer-marked": "^2.0.0",
-    "hexo-renderer-stylus": "^1.1.0",
-    "hexo-server": "^1.0.0"
+    "hexo-renderer-marked": "^4.0.0",
+    "hexo-renderer-stylus": "^2.0.1",
+    "hexo-server": "^2.0.0"
   },
   "yuqueConfig": {
+    "postPath": "source/_posts/yuque",
+    "cachePath": "yuque.json",
+    "mdNameFormat": "title",
+    "adapter": "hexo",
+    "concurrency": 5,
     "baseUrl": "https://www.yuque.com/api/v2",
     "login": "resonance",
-    "repo": "cqu234"
+    "repo": "rwaxct",
+    "onlyPublished": false,
+    "onlyPublic": false
   },
   "devDependencies": {
-    "yuque-hexo": "^1.6.0"
+    "gulp": "^4.0.2",
+    "gulp-html-minifier-terser": "^6.0.1",
+    "gulp-htmlclean": "^2.7.22",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-terser": "^2.0.1",
+    "yuque-hexo": "^1.7.0"
   }
 }

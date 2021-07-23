@@ -1,0 +1,244 @@
+use_cdn: false
+navbar:
+  logo: # choose [img] or [icon + title]
+    img: '' #https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png
+    icon:
+    title: 'All Resonance'
+  menu:
+    - name: 首页
+      icon: fad fa-book faa-tada
+      url: /
+      target: _self
+
+    - name: 关于
+      icon: fad fa-heart
+      url: /about/
+
+    - name: 更多
+      icon: fad fa-ellipsis-v
+      rows:
+        - name: 暗黑模式
+          icon: fas fa-moon
+          toggle: darkmode
+        - name: hr
+        - name: 博客文章
+          url: /archives/
+
+cover:
+  # height_scheme: full # full, half
+  title: 'All Resonance'
+  subtitle: '物质的底层是能量，而能量的底层是精神！'
+  background: https://bing.ioliu.cn/v1/rand?w=1920&h=1200
+  features:
+    - name: 首页
+      img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f4f0.svg
+      url: /
+    - name: 文章
+      img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f516.svg
+      url: /archives/
+      target: _self
+    - name: 关于
+      img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f497.svg
+      url: /about/
+    - name: 源码
+      img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f9ec.svg
+      url: https://github.com/all-resonance/all-resonance/
+      target: _self
+
+article:
+  preview:
+    scheme: landscape # landscape
+    # pin icon for post
+    pin_icon: # https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f4cc.svg
+    # auto generate title if not exist
+    auto_title: false # false, true
+    # auto generate excerpt if not exist
+    auto_excerpt: false # false, true
+    author: true
+    # show readmore button
+    readmore: auto # auto, always
+  body:
+    meta_library:
+      author:
+        avatar: https://cdn.nlark.com/yuque/0/2020/jpeg/anonymous/1589423837659-4734a3f4-30d1-4d38-835e-c1495a162db9.jpeg
+        name: 向仕林
+        url: https://github.com/all-resonance/
+      updated:
+        title: '本页文档最后更新于：'
+
+comments:
+  service: utterances
+  utterances:
+    repo: all-resonance/all-resonance
+    issue-number: 1
+
+sidebar:
+  for_page: [news, blogger, post, category, tagcloud, guide, ] # qrcode
+  for_post: [toc]
+  widget_library:
+    blogger:
+      class: blogger
+      display: [desktop, mobile] # [desktop, mobile]
+      avatar: https://cdn.nlark.com/yuque/0/2020/jpeg/anonymous/1589423837659-4734a3f4-30d1-4d38-835e-c1495a162db9.jpeg
+      shape: rectangle # circle, rectangle
+      url: /about/
+      title: 创造与吸引
+      subtitle: 你创造你的实相
+      jinrishici: true # Poetry Today. You can set a string, and it will be displayed when loading fails.
+      social:
+        - icon: fas fa-rss
+          url: /atom.xml
+        - icon: fas fa-envelope
+          url: mailto:295755973@qq.com
+        - icon: fab fa-github
+          url: https://github.com/all-resonance/
+        - icon: fas fa-headphones-alt
+          url: /
+    toc:
+      class: toc
+      display: [desktop, mobile] # [desktop, mobile]
+      header:
+        icon: fas fa-list
+        title: 本文目录
+      list_number: true
+      min_depth: 2
+      max_depth: 5
+    # 文档导航
+    guide:
+      class: grid
+      display: [desktop, mobile] # [desktop, mobile]
+      header:
+        icon: fas fa-map-signs
+        title: 分类导航
+      fixed: true # 固定宽度
+      rows:
+        - name: 首页
+          icon: fad fa-book faa-tada
+          url: /
+        - name: 文章
+          icon: fas fa-file-alt
+          url: /archives/
+        - name: 关于
+          icon: fad fa-heart
+          url: /about/
+    # qrcode widget
+    qrcode:
+      class: qrcode
+      display: [desktop] # [desktop, mobile]
+      header:
+        icon: fas fa-mobile
+        title: 手机观看
+      height: #64px  # Automatic height if not set
+      fancybox: #true
+      images:
+        - https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png
+    news:
+      class: list
+      display: [desktop, mobile] # [desktop, mobile]
+      header:
+        icon: fas fa-exclamation-triangle
+        title: 近期公告
+      rows:
+        - name: 欢迎光临我的博客
+          icon: fas fa-info-circle
+          # url: https://github.com/volantis-x/hexo-theme-volantis/issues/215
+        
+site_footer:
+  layout: [aplayer, social, source, analytics, copyright]
+  copyright: '[Copyright © 2017-2021 Volantis Team](https://github.com/volantis-x/)'
+  social:
+    - img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org@1.1/icon/1322024-social-media/020-rss.svg
+      url: atom.xml
+    - img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org@1.1/icon/1322024-social-media/029-github.svg
+      url: https://github.com/all-resonance/
+    - img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org@1.1/icon/1322024-social-media/010-facebook.svg
+      url: /
+    - img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org@1.1/icon/1322024-social-media/018-twitter.svg
+      url: /
+    - img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org@1.1/icon/1322024-social-media/045-telegram.svg
+      url: /
+    - img: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org@1.1/icon/1322024-social-media/006-youtube.svg
+      url: /
+  analytics: >
+    <span></span>
+
+tag_plugins:
+  # {% note text %}
+  note: # style for default note:
+    iconfont: 'Font Awesome 5 Pro'
+
+plugins:
+  clipboard:
+    enable: true
+  fontawesome: https://cdn.jsdelivr.net/gh/volantis-x/cdn-fontawesome-pro@master/css/all.min.css
+  backstretch:
+    enable: true
+    images:               # For personal use only. At your own risk if used for commercial purposes !!!
+      - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.jpg
+      - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.jpg
+      - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg
+      - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.jpg
+      - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.jpg
+  parallax:
+    enable: false
+    images:
+      - https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.jpg
+  aplayer:
+    enable: true
+    autoplay: false
+    volume: 0.4
+    order: random
+    # id: 4917530132 # vol red
+    # id: 4917524698 # vol blue
+    # id: 76244489 # vol white
+    # id: 5135845906 # for Volantis 3.0
+    id: 5062959861 # TOP 30
+  darkmodejs:
+    enable: true
+
+analytics:
+  busuanzi: #https://cdn.jsdelivr.net/gh/volantis-x/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js
+  leancloud:
+    app_id: GCYDRKI6XRkyC7EuEhJv90ia-MdYXbMMI
+    app_key: 4xKBXGBj6BgecU62vff5rJHs
+    custom_api_server: # 一般不需要写，除非自定义了 API Server
+
+custom_css:
+  font_smoothing: true
+  sidebar:
+    effect: [shadow] # [shadow, floatable, blur]
+  body:
+    effect: [shadow] # [shadow, floatable, blur]
+  fontfamily:
+    logofont:
+      fontfamily: 'Dosis, "PingFang SC", "Microsoft YaHei", Helvetica, Arial'
+      name: 'Dosis'
+      url: https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts@20.5.30/Dosis/Dosis-Medium.ttf
+      weight: normal
+      style: normal
+    bodyfont:
+      fontfamily: 'Dosis, "PingFang SC", "Microsoft YaHei", Helvetica, Arial'
+      name: 'Dosis'
+      url: https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts@20.5.30/Dosis/Dosis-Medium.ttf
+      weight: normal
+      style: normal
+
+rightmenu:
+  enable: true
+  faicon: fa
+  # hr: 分割线, music: 音乐控制器
+  layout: [home, hr, source_docs, hr, print, darkmode, hr, music]
+  # 可选功能项
+  print:                  # 只有文章页才允许自定义打印，建议打印选项勾选背景图形 & 取消勾选页眉和页脚
+    name: 打印页面        #       👆 class = article.post 的页面
+    icon: fa fa-print
+    defaultStyles: true   # 是否使用预制的打印样式
+  darkmode: # 需开启plugins.darkmodejs
+    name: 暗黑模式
+    white: fa fa-sun
+    dark: fa fa-moon
+  # 自定义菜单的格式如下
+  source_docs:
+    name: 本站源码
+    icon: fa fa-code-branch
+    url: https://github.com/all-resonance/all-resonance/
