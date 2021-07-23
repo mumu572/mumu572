@@ -8,7 +8,6 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    environment: docs-pages
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v2
@@ -31,5 +30,6 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
+          port: 22
           local-dir: ./public/
           server-dir: /public_html/www/resonance.fun/
