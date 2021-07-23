@@ -13,7 +13,8 @@
     "dev": "hexo s",
     "sync": "YUQUE_TOKEN=sNVkgu5uoA5dXPSbxW9uf91vahBMCYeUU9qD6MRo yuque-hexo sync",
     "reset": "npm run clean:yuque && npm run clean && npm run sync",
-    "theme": "git submodule add --force https://github.com/all-resonance/hexo-theme-volantis.git themes/hexo-theme-volantis"
+    "theme": "git submodule add --force https://github.com/all-resonance/hexo-theme-volantis.git themes/hexo-theme-volantis",
+    "theme-dev": "git submodule add -b dev --force https://github.com/all-resonance/hexo-theme-volantis.git themes/hexo-theme-volantis"
   },
   "dependencies": {
     "hexo": "^4.2",

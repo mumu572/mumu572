@@ -3,18 +3,19 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: feline blog
-subtitle: 但凡能引起思考的句子，都是些好句子。
-keywords: feline的备忘录,html/css/JavaScript,前端工程师,Angular,Ionic,Vue,React,Node.js,Powershell,Qt5
-description: feline的备忘录,html/css/JavaScript,前端工程师,Angular,Ionic,Vue,React,Node.js,Powershell,Qt5
-author: feline
+title: All Resonance
+subtitle: 物质的本质是能量，而能量的底层是精神！。
+keywords: Shilin的备忘录,html/css/JavaScript,前端工程师,Angular,Ionic,Vue,React,Node.js,Powershell,Qt5
+description: 物质的本质是能量，而能量的底层是精神！
+author: all-resonance
 language: zh-CN
-timezone:
+timezone: ''
+avatar: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://xiangshilin.gitee.io/blog
-root: /blog
+url: https://resonance.fun
+root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
