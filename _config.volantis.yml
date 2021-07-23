@@ -23,6 +23,9 @@ navbar:
         - name: hr
         - name: 博客文章
           url: /archives/
+        - name: 触发更新
+          url: https://service-74zfjx44-1252836726.gz.apigw.tencentcs.com/release/github-action
+          target: _blank
 
 cover:
   # height_scheme: full # full, half
@@ -227,7 +230,7 @@ rightmenu:
   enable: true
   faicon: fa
   # hr: 分割线, music: 音乐控制器
-  layout: [home, hr, source_docs, hr, print, darkmode, hr, music]
+  layout: [home, hr, source_docs, hr, print, darkmode, update, hr, music]
   # 可选功能项
   print:                  # 只有文章页才允许自定义打印，建议打印选项勾选背景图形 & 取消勾选页眉和页脚
     name: 打印页面        #       👆 class = article.post 的页面
@@ -242,3 +245,8 @@ rightmenu:
     name: 本站源码
     icon: fa fa-code-branch
     url: https://github.com/all-resonance/all-resonance/
+  update:
+    name: 触发更新
+    icon: fa fa-fan fa-spin
+    url: https://service-74zfjx44-1252836726.gz.apigw.tencentcs.com/release/github-action
+    target: _blank
