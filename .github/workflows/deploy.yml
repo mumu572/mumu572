@@ -17,6 +17,8 @@ jobs:
       - name: Install Dependencies And Build 🔧
         run: |
           npm install
+          rm -rf ./themes
+          npm run theme:dev
           npm run build
       - name: Deploy Github Pages 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.4
