@@ -20,11 +20,11 @@ jobs:
         env:
           YUQUE_TOKEN: ${{ secrets.YUQUE_TOKEN }}
         run: |
-          npm install
+          yarn install
           rm -rf ./themes
-          npm run theme:dev
-          npm run yuque-hexo sync
-          npm run build
+          yarn theme:dev
+          yarn yuque-hexo sync
+          yarn build
       - name: Deploy Github Pages 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
