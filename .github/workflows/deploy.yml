@@ -17,11 +17,13 @@ jobs:
         with:
           persist-credentials: false
       - name: Install Dependencies And Build 🔧
+        env:
+          YUQUE_TOKEN: ${{ secrets.YUQUE_TOKEN }}
         run: |
           npm install
           rm -rf ./themes
           npm run theme:dev
-          npm run YUQUE_TOKEN=${{ secrets.YUQUE_TOKEN }} yuque-hexo sync
+          npm run yuque-hexo sync
           npm run build
       - name: Deploy Github Pages 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.4
