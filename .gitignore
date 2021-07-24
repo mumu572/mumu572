@@ -8,5 +8,4 @@ public/
 package-lock.json
 .idea
 .deploy_git
-.yuque.json
-.sync.sh
+sync.sh
