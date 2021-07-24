@@ -1,1 +1,0 @@
-YUQUE_TOKEN=sNVkgu5uoA5dXPSbxW9uf91vahBMCYeUU9qD6MRo yarn yuque-hexo sync
