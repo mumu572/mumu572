@@ -41,5 +41,5 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           password: ${{ secrets.SSH_PASSWORD }}
           scp_source: ./resonance.fun/
-          scp_target: /www/wwwroot/
+          scp_target: /www/wwwroot/resonance.fun
             
