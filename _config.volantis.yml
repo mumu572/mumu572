@@ -160,13 +160,13 @@ sidebar:
       fixed: true # 固定宽度
       rows:
         - name: 首页
-          icon: fad fa-book faa-tada
+          icon: fa-solid fa-rss
           url: /
         - name: 文章
           icon: fas fa-file-alt
           url: /archives/
         - name: 关于
-          icon: fad fa-heart
+          icon: fa-solid fa-info-circle
           url: /about/
     # qrcode widget
     qrcode:
