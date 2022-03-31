@@ -1,5 +1,10 @@
-title: about
-date: 2016-06-04 15:37:25
+---
+layout: docs
+seo_title: 关于
+bottom_meta: false
+sidebar: []
+valine:
+  placeholder: 有什么想对我说的呢？
 ---
 
 ### Hi there，I'm shilin 👋

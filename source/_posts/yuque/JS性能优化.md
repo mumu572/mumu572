@@ -1,7 +1,7 @@
 ---
 title: JS性能优化
 urlname: cmdzmq
-date: '2021-05-26 13:16:12 +0000'
+date: '2021-05-26 21:16:12 +0800'
 tags: []
 categories: []
 ---
@@ -157,6 +157,7 @@ V8 内存的上限设定：64 位 1.5G 32 位 800M
 ### V8 垃圾回收策略
 
 采用分代回收的思想，把内存空间按照一定的规则分为两类，**新生代**存储区和**老生代**存储区。针对不同代采用最高效的 GC 算法，从而对不同的对象进行回收操作。
+![](https://cdn.nlark.com/yuque/0/2021/jpeg/1429353/1622989590392-e6acf015-001d-47af-a104-21ed4ab67419.jpeg)
 
 ### V8 中常用的 GC 算法
 
@@ -168,7 +169,7 @@ V8 内存的上限设定：64 位 1.5G 32 位 800M
 
 ### V8 如何回收新生代对象
 
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/1429353/1622954154226-5f921e40-e7a4-4868-9956-afae918bd89f.png#align=left&display=inline&height=89&id=ubca4cc3b&margin=%5Bobject%20Object%5D&name=image.png&originHeight=99&originWidth=831&size=12542&status=done&style=shadow&width=749)
+![image.png](https://cdn.nlark.com/yuque/0/2021/png/1429353/1622954154226-5f921e40-e7a4-4868-9956-afae918bd89f.png#crop=0&crop=0&crop=1&crop=1&height=89&id=ubca4cc3b&margin=%5Bobject%20Object%5D&name=image.png&originHeight=99&originWidth=831&originalType=binary∶=1&rotation=0&showTitle=false&size=12542&status=done&style=shadow&title=&width=749)
 如图所示，V8 内部将空间分为了两部分，左侧(From To)小空间专门用于存储新生代对象，在 64 位操作系统中，它的大小为 32M，32 位系统中，它的大小是 16M；
 **新生代指的是存活时间较短的对象**。比如局部作用域(函数)中定义的变量，当函数执行完，函数出栈时函数中的变量就会被回收。
 那么，V8 是如何完成新生代对象回收的呢？

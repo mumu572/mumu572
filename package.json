@@ -11,9 +11,9 @@
     "clean:yuque": "yuque-hexo clean",
     "clean:all": "yuque-hexo clean && hexo clean",
     "deploy": "npm run build && hexo deploy",
-    "sync": "sh sync.sh",
+    "sync": "set YUQUE_TOKEN=[从语雀获取的密匙] && yuque-hexo sync",
     "theme": "git submodule add --force https://github.com/all-resonance/hexo-theme-volantis.git themes/volantis",
-    "theme:dev": "git submodule add -b dev --force https://github.com/all-resonance/hexo-theme-volantis.git themes/volantis"
+    "theme:dev": "git submodule add -b main --force https://github.com/all-resonance/hexo-theme-volantis.git themes/volantis"
   },
   "dependencies": {
     "hexo": "^5.4.0",
@@ -41,7 +41,7 @@
     "concurrency": 5,
     "baseUrl": "https://www.yuque.com/api/v2",
     "login": "resonance",
-    "repo": "rwaxct",
+    "repo": "cqu234",
     "onlyPublished": false,
     "onlyPublic": false
   },
@@ -52,6 +52,6 @@
     "gulp-htmlmin": "^5.0.1",
     "gulp-minify-css": "^1.2.4",
     "gulp-terser": "^2.0.1",
-    "yuque-hexo": "^1.7.0"
+    "yuque-hexo": "^1.9.1"
   }
 }

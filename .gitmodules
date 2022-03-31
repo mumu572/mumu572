@@ -5,4 +5,4 @@
 [submodule "themes/volantis"]
 	path = themes/volantis
 	url = https://github.com/all-resonance/hexo-theme-volantis.git
-	branch = dev
+	branch = main

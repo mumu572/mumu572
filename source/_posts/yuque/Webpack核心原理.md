@@ -1,13 +1,12 @@
 ---
 title: Webpack核心原理
 urlname: pa2vzf
-date: '2021-06-27 03:49:50 +0000'
+date: '2021-06-27 11:49:50 +0800'
 tags: []
 categories: []
 ---
 
 对于`Webpack`来说，它本质上就是一个模块打包器，正是由于有了`Loader`和`Plugin`，才让`Webpack`有了其他各种各样的功能。
-​
 
 ## Webpack 打包后的文件
 
@@ -130,6 +129,8 @@ yarn webpack
 
 ## 单文件打包执行流程解析
 
+![](https://cdn.nlark.com/yuque/0/2021/jpeg/1429353/1624954520614-a2d77776-1d40-42f2-8a94-fe74ab2a5ce0.jpeg)
+
 ## Webpack 打包主流程分析
 
 编写调试代码，新建`debug.js`：
@@ -154,3 +155,4 @@ compiler.run((err, stats) => {
 ```
 
 打开`VS Code`调试模式，将断点定到第四行，接下来就开始分析它的主要流程：
+![](https://cdn.nlark.com/yuque/0/2021/jpeg/1429353/1625118006345-c39ec915-6b29-46c3-90dd-0e76dc54b3ad.jpeg)

@@ -36,10 +36,13 @@ module.exports = {
     minify_css: minify_css,
     minify_js: minify_js
 };
-gulp.task('one', gulp.parallel(
-    minify_html,
-    minify_css,
-    minify_js
-))
+gulp.task('one', done => {
+    gulp.parallel(
+        minify_html,
+        minify_css,
+        minify_js
+    )
+    done()
+})
 
 gulp.task('default', gulp.series('one'));

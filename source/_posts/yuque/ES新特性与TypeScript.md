@@ -1,9 +1,11 @@
 ---
 title: ES新特性与TypeScript
 urlname: ocmg9x
-date: '2021-05-26 07:47:31 +0000'
-tags: []
-categories: []
+date: '2021-05-26 15:47:31 +0800'
+tags:
+  - ES6
+categories:
+  - JavaScript
 ---
 
 我们常说 ECMAScript 是一种脚本语言，通常我们把 ECMAScript 看做是一种标准化规范，而实际上是 JavaScript 是 ECMAScript 的扩展语言。
