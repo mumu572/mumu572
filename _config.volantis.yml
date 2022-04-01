@@ -1,4 +1,5 @@
 use_cdn: false
+
 navbar:
   logo: # choose [img] or [icon + title]
     img: '' #https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png
@@ -31,16 +32,10 @@ darkmode:
   enable: true
 
 cover:
-  # height_scheme: full # full, half
   title: 'All Resonance'
-  subtitle: '物质的底层是能量，而能量的底层是精神！'
+  subtitle: '夫君子之行，静以修身，俭以养德，非淡泊无以明志，非宁静无以致远～'
   # background: https://bing.ioliu.cn/v1/rand?w=1920&h=1200
-  background: https://bing.bfsea.xyz/v1/rand?w=1920&h=1200
-  # https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.jpg
-  # https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.jpg
-  # https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.jpg
-  # https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.jpg
-  # https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.jpg
+  # background: https://bing.bfsea.xyz/v1/rand?w=1920&h=1200
   features:
     - name: 首页
       img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f4f0.svg
@@ -114,10 +109,27 @@ article:
         url: /
       
 comments:
-  service: utterances
+  service: giscus # utterances
   utterances:
     repo: all-resonance/all-resonance
     issue-number: 1
+  # giscus
+  # https://giscus.app
+  # https://github.com/laymonage/giscus
+  giscus:
+    # 以下配置按照 yml 格式增删填写即可
+    repo: all-resonance/all-resonance
+    repo-id: MDEwOlJlcG9zaXRvcnkzODc0NjE0MDY=
+    category: Show and tell
+    category-id: DIC_kwDOFxgxHs4COXN6
+    mapping: "title"
+    reactions-enabled: "1"
+    emit-metadata: "0"
+    lang: "zh-CN"
+    # 以上配置按照 yml 格式增删填写即可
+    theme:
+      light: "light" # https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@master/css/giscus/light.css
+      dark: "dark" # https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@master/css/giscus/dark.css
 
 sidebar:
   for_page: [news, blogger, post, category, tagcloud, guide, ] # qrcode
@@ -126,11 +138,11 @@ sidebar:
     blogger:
       class: blogger
       display: [desktop, mobile] # [desktop, mobile]
-      avatar: https://cdn.nlark.com/yuque/0/2020/jpeg/anonymous/1589423837659-4734a3f4-30d1-4d38-835e-c1495a162db9.jpeg
+      avatar: https://cdn.nlark.com/yuque/0/2022/png/1429353/1648780999326-avatar/e6a1ea94-d01e-4cfa-8b55-17e74afcb162.png?x-oss-process=image%2Fresize%2Cm_fill%2Cw_320%2Ch_320%2Fformat%2Cpng
       shape: rectangle # circle, rectangle
       url: /about/
-      title: 创造与吸引
-      subtitle: 你创造你的实相
+      title: 我手写我心
+      # subtitle: 
       jinrishici: true # Poetry Today. You can set a string, and it will be displayed when loading fails.
       social:
         - icon: fas fa-rss
@@ -186,19 +198,17 @@ sidebar:
         icon: fas fa-exclamation-triangle
         title: 近期公告
       rows:
-        - name: 欢迎光临我的博客
+        - name: 欢迎光临我的博客，祝好！
           icon: fas fa-info-circle
-          # url: https://github.com/volantis-x/hexo-theme-volantis/issues/215
+          url: https://www.yuque.com/resonance/cqu234
         
 site_footer:
   copyright: '[Copyright © 2021-2022 All Resonance](https://github.com/all-resonance/)<span style="margin: 0 5px">|</span><a href="https://beian.miit.gov.cn">蜀ICP备2021016014号</a>'
   
-tag_plugins:
-  # {% note text %}
-  note: # style for default note:
-    iconfont: 'Font Awesome 5 Pro'
-
 plugins:
+  # 视差滚动效果 Slide Background
+  parallax:
+    enable: true
   darkmode:
     enable: true
   aplayer:
@@ -243,25 +253,3 @@ rightmenu:
     icon: fa fa-fan fa-spin
     url: /
     #target: _blank
-
-custom_css:
-  cursor:
-    enable: true
-  font_smoothing: true
-  sidebar:
-    effect: [shadow] # [shadow, floatable, blur]
-  body:
-    effect: [shadow] # [shadow, floatable, blur]
-  fontfamily:
-    logofont:
-      fontfamily: 'Dosis, "PingFang SC", "Microsoft YaHei", Helvetica, Arial'
-      name: 'Dosis'
-      url: https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts@20.5.30/Dosis/Dosis-Medium.ttf
-      weight: normal
-      style: normal
-    bodyfont:
-      fontfamily: 'Dosis, "PingFang SC", "Microsoft YaHei", Helvetica, Arial'
-      name: 'Dosis'
-      url: https://cdn.jsdelivr.net/gh/volantis-x/cdn-fonts@20.5.30/Dosis/Dosis-Medium.ttf
-      weight: normal
-      style: normal

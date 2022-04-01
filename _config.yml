@@ -4,13 +4,13 @@
 
 # Site
 title: All Resonance
-subtitle: 物质的本质是能量，而能量的底层是精神！。
-keywords: Shilin的备忘录,html/css/JavaScript,前端工程师,Angular,Ionic,Vue,React,Node.js,Powershell,Qt5
-description: 物质的本质是能量，而能量的底层是精神！
+subtitle: 夫君子之行，静以修身，俭以养德，非淡泊无以明志，非宁静无以致远～
+keywords: Shilin的备忘录,html/css/JavaScript,前端工程师,Vue,React,Node.js
+description: 夫君子之行，静以修身，俭以养德，非淡泊无以明志，非宁静无以致远～
 author: all-resonance
 language: zh-CN
 timezone: ''
-avatar: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png
+avatar: https://cdn.nlark.com/yuque/0/2022/png/1429353/1648780999326-avatar/e6a1ea94-d01e-4cfa-8b55-17e74afcb162.png?x-oss-process=image%2Fresize%2Cm_fill%2Cw_320%2Ch_320%2Fformat%2Cpng
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -105,3 +105,5 @@ jsonContent:
 marked:
   gfm: true
   breaks: false
+
+favicon: images/favicon.ico
