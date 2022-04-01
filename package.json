@@ -13,7 +13,7 @@
     "deploy": "npm run build && hexo deploy",
     "sync": "set YUQUE_TOKEN=[从语雀获取的密匙] && yuque-hexo sync",
     "theme": "git submodule add --force https://github.com/all-resonance/hexo-theme-volantis.git themes/volantis",
-    "theme:dev": "git submodule add -b main --force https://github.com/all-resonance/hexo-theme-volantis.git themes/volantis"
+    "theme:dev": "git submodule add -b dev --force https://github.com/all-resonance/hexo-theme-volantis.git themes/volantis"
   },
   "dependencies": {
     "hexo": "^5.4.0",

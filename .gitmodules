@@ -1,8 +1,4 @@
-[submodule "themes/hexo-theme-volantis"]
-	path = themes/hexo-theme-volantis
-	url = https://github.com/all-resonance/hexo-theme-volantis.git
-	branch = dev
 [submodule "themes/volantis"]
 	path = themes/volantis
 	url = https://github.com/all-resonance/hexo-theme-volantis.git
-	branch = main
+	branch = dev
