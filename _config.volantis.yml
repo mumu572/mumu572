@@ -213,14 +213,9 @@ plugins:
     enable: true
   aplayer:
     enable: true
-    autoplay: false
-    volume: 0.4
-    order: random
-    # id: 4917530132 # vol red
-    # id: 4917524698 # vol blue
-    # id: 76244489 # vol white
-    # id: 5135845906 # for Volantis 3.0
-    id: 5062959861 # TOP 30
+    server: tencent   # netease, tencent, kugou, xiami, baidu
+    type: playlist    # song, playlist, album, search, artist
+    id: 8420675614    # song id / playlist id / album id / search keyword
 
 analytics:
   busuanzi: #https://cdn.jsdelivr.net/gh/volantis-x/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js
