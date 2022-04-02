@@ -4,13 +4,13 @@
 
 **Languages:**  
 
-<code><img height="20" src="./source/images/topics/javascript.png"></code>
-<code><img height="20" src="./source/images/topics/typescript.png"></code>
-<code><img height="20" src="./source/images/topics/react.png"></code>
-<code><img height="20" src="./source/images/topics/webpack.png"></code>
-<code><img height="20" src="./source/images/topics/nodejs.png"></code>
-<code><img height="20" src="./source/images/topics/java.png"></code>
-<code><img height="20" src="./source/images/topics/flutter.png"></code>
+<code><img height="20" src="https://resonance.fun/images/topics/javascript.png"></code>
+<code><img height="20" src="https://resonance.fun/images/topics/typescript.png"></code>
+<code><img height="20" src="https://resonance.fun/images/topics/react.png"></code>
+<code><img height="20" src="https://resonance.fun/images/topics/webpack.png"></code>
+<code><img height="20" src="https://resonance.fun/images/topics/nodejs.png"></code>
+<code><img height="20" src="https://resonance.fun/images/topics/java.png"></code>
+<code><img height="20" src="https://resonance.fun/images/topics/flutter.png"></code>
 
 [![Shilin's github stats](https://github-readme-stats.vercel.app/api?username=all-resonance&show_icons=true&bg_color=320,323031,84a59d&icon_color=b0c4b1&title_color=eec170&text_color=a2a392&include_all_commits=true")](https://github.com/anuraghazra/github-readme-stats)
 
