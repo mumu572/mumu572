@@ -34,8 +34,7 @@ darkmode:
 cover:
   title: 'All Resonance'
   subtitle: '夫君子之行，静以修身，俭以养德，非淡泊无以明志，非宁静无以致远～'
-  # background: https://bing.ioliu.cn/v1/rand?w=1920&h=1200
-  # background: https://bing.bfsea.xyz/v1/rand?w=1920&h=1200
+  background: http://api.resonance.fun:999/bing/image/rand
   features:
     - name: 首页
       img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f4f0.svg
@@ -208,7 +207,7 @@ site_footer:
 plugins:
   # 视差滚动效果 Slide Background
   parallax:
-    enable: true
+    enable: false
   darkmode:
     enable: true
   aplayer:
