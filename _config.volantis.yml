@@ -2,7 +2,7 @@ use_cdn: false
 
 navbar:
   logo: # choose [img] or [icon + title]
-    img: '' #https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png
+    img: '' #https://fastly.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png
     icon:
     title: 'All Resonance'
   menu:
@@ -37,17 +37,17 @@ cover:
   background: //mumu-page-server.resonance.fun/bing/image/rand
   features:
     - name: 首页
-      img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f4f0.svg
+      img: https://fastly.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f4f0.svg
       url: /
     - name: 文章
-      img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f516.svg
+      img: https://fastly.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f516.svg
       url: /archives/
       target: _self
     - name: 关于
-      img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f497.svg
+      img: https://fastly.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f497.svg
       url: /about/
     - name: 源码
-      img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f9ec.svg
+      img: https://fastly.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f9ec.svg
       url: https://github.com/all-resonance/all-resonance/
       target: _self
 
@@ -93,8 +93,8 @@ article:
       donate:
         enable: false
         images:
-          - /media/org.volantis/blog/qrcode/github@volantis.png # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png
-          - /media/org.volantis/blog/qrcode/github@volantis.png # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png
+          - /media/org.volantis/blog/qrcode/github@volantis.png # https://fastly.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png
+          - /media/org.volantis/blog/qrcode/github@volantis.png # https://fastly.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png
     # 文章底部信息
     # 从 meta_library 中取
     bottom_meta: [updated, tags, share]
@@ -127,8 +127,8 @@ comments:
     lang: "zh-CN"
     # 以上配置按照 yml 格式增删填写即可
     theme:
-      light: "light" # https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@master/css/giscus/light.css
-      dark: "dark" # https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@master/css/giscus/dark.css
+      light: "light" # https://fastly.jsdelivr.net/gh/volantis-x/cdn-volantis@master/css/giscus/light.css
+      dark: "dark" # https://fastly.jsdelivr.net/gh/volantis-x/cdn-volantis@master/css/giscus/dark.css
 
 sidebar:
   for_page: [news, blogger, post, category, tagcloud, guide, ] # qrcode
@@ -189,7 +189,7 @@ sidebar:
       height: #64px  # Automatic height if not set
       fancybox: #true
       images:
-        - https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png
+        - https://fastly.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png
     news:
       class: list
       display: [desktop, mobile] # [desktop, mobile]
@@ -217,7 +217,7 @@ plugins:
     id: 8420675614    # song id / playlist id / album id / search keyword
 
 analytics:
-  busuanzi: #https://cdn.jsdelivr.net/gh/volantis-x/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js
+  busuanzi: #https://fastly.jsdelivr.net/gh/volantis-x/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js
   leancloud:
     app_id: Cky5AowHIVQ4Kc4Shd65XS8b-gzGzoHsz
     app_key: HR0MWtonsUplwoOcrWbPU4JE
